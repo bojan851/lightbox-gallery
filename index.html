@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/038%20Grid.css">        
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">        
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">        
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="https://www.gerflor.com.au/media/13-australia-website/quicksales-australia/faviconico.jpg" />
+        <title>Galerija hrane</title>
+    </head>
+    
+    <body>
+        
+        <div id="header">
+            <div id="logo">
+                <h1>Galerija +</h1>
+            </div>
+        </div>
+        
+        <div id="overlay"></div>
+        <h2 class="row restoran">Restoran Galerija</h2>
+        <div id="frame">
+            <table id="frame-table">
+                <tr>
+                    <td id="left"><img src="resources/img/left.png"></td>
+                    <td id="right"><img src="resources/img/right.png"></td>
+                </tr>
+            </table>
+            <img src="" id="main">
+            
+            <!-- Dodavanje deskripcije, AJAX 2 -->
+            <div id="description">
+                <p></p>
+            </div>
+            
+        </div>
+        <div id="wrapper">
+            
+            <!-- lista za filtere, AJAX 3, ispod u listu su dodate klase sa svaki list item -->
+            <ul id="filter">
+                <li class="active">sve</li>
+                <li>slano</li>
+                <li>voce</li>
+                <li>slatko</li>
+                <!-- dodat input za search-kraj-->
+                <li><input id="search" type="text" placeholder="trazi..."/></li>
+            </ul>
+            
+            <ul id="portfolio">
+                <!-- data-keywords dodati na kraju, za search-->
+                <li data-keywords="meso" class="sve slano"><img id="1" src="resources/img/food-712665_1920.jpg"></li>
+                <li data-keywords="muffini" class="sve slatko"><img id="2" src="resources/img/cupcakes-690040_1920.jpg"></li>
+                <li data-keywords="sendvic" class="sve slano"><img id="3" src="resources/img/hamburger-494706_1920.jpg"></li>
+                <li data-keywords="borovnice" class="sve voce"><img id="4" src="resources/img/blueberries-690072_1920.jpg"></li>
+                <li data-keywords="pizza" class="sve slano"><img id="5" src="resources/img/piza-3010062_1920.jpg"></li>
+                <li data-keywords="maline" class="sve voce"><img id="6" src="resources/img/raspberry-2023404_1920.jpg"></li>
+                <li data-keywords="svinjetina" class="sve slano"><img id="7" src="resources/img/asparagus-2169305_1920.jpg"></li>
+                <li data-keywords="jagode" class="sve voce"><img id="8" src="resources/img/strawberry-2960533_1920.jpg"></li>
+            </ul>
+        </div>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script> 
+    <script src="resources/js/filter.js"></script> 
+        
+    </body>
+    
+</html>
